@@ -31,11 +31,11 @@ if __name__ == '__main__':
     # Прохождение по оси X
     for x in range(0, L):
         sum = 0
-        print("SumPlaneX = {0}".format(sum), end = '')
+        print("SumPlaneX = {0}".format(sum), end='')
         for y in range(0, N):
             for z in range(0, M):
                 sum += A[x][y][z]
-                print(" + {0}".format(A[x][y][z]), end = '')
+                print(" + {0}".format(A[x][y][z]), end='')
         if sum > maxX:
             print(" = {0}".format(sum))
             print("SumPlaneX > maxX")
@@ -79,6 +79,5 @@ if __name__ == '__main__':
         print("\n")
     print("maxZ = {0}\n".format(maxZ))
 
-    Max = 0
     Max = max(maxX, max(maxY, maxZ))
     print("Maximum value [{0}, {1}, {2}] => {3}".format(maxX, maxY, maxZ, Max))
