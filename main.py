@@ -15,13 +15,13 @@ if __name__ == '__main__':
     z = 0
     for x in range(0, N):
         for y in range(0, M):
-            for z in range(1, L):
+            for z in range(0, L):
                 A[x][y][z] = random.randint(-20, 20)
 
     # Печать сгенерированного массива
     for x in range(0, N):
         for y in range(0, M):
-            for z in range(1, L):
+            for z in range(0, L):
                 print("A[{0}][{1}][{2}] == {3}".format(x, y, z, A[x][y][z]))
 
     maxX = -21
@@ -36,7 +36,6 @@ if __name__ == '__main__':
             for z in range(0, M):
                 sum += A[x][y][z]
                 print(" + {0}".format(A[x][y][z]), end = '')
-        print(" = ", end = '')
         if sum > maxX:
             print(" = {0}".format(sum))
             print("SumPlaneX > maxX")
@@ -54,7 +53,6 @@ if __name__ == '__main__':
             for z in range(0, M):
                 sum += A[x][y][z]
                 print(" + {0}".format(A[x][y][z]), end='')
-        print(" = ", end='')
         if sum > maxY:
             print(" = {0}".format(sum))
             print("SumPlaneY > maxY")
@@ -72,7 +70,6 @@ if __name__ == '__main__':
             for y in range(0, M):
                 sum += A[x][y][z]
                 print(" + {0}".format(A[x][y][z]), end='')
-        print(" = ", end='')
         if sum > maxZ:
             print(" = {0}".format(sum))
             print("SumPlaneX > maxZ")
