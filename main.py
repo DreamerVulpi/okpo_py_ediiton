@@ -58,7 +58,7 @@ if __name__ == '__main__':
             print("SumPlaneY > maxY")
             print("{0} > {1}".format(sum, maxY))
             maxY = sum
-            print("CoordinateDotOnPlaneX [{0}][{1}][{2}]\n".format(0, y, 0))
+            print("CoordinateDotOnPlaneY [{0}][{1}][{2}]\n".format(0, y, 0))
         print("\n")
     print("maxY = {0}\n".format(maxY))
 
@@ -75,7 +75,7 @@ if __name__ == '__main__':
             print("SumPlaneX > maxZ")
             print("{0} > {1}".format(sum, maxZ))
             maxZ = sum
-            print("CoordinateDotOnPlaneX [{0}][{1}][{2}]\n".format(0, 0, z))
+            print("CoordinateDotOnPlaneZ [{0}][{1}][{2}]\n".format(0, 0, z))
         print("\n")
     print("maxZ = {0}\n".format(maxZ))
 
